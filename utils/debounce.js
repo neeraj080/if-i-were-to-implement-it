@@ -10,6 +10,7 @@ function debounce(fn, wait) {
 
         timerId = setTimeout(() => {
             fn.apply(null, arguments);
+            timerId = null;
         }, wait);
     }
 }
